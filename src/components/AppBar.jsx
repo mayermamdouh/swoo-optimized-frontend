@@ -4,7 +4,7 @@ export default function AppBar() {
   return (
     <header className="flex flex-col">
       <div className="bg-foreground ">
-        <Image src="/images/logoo.png" width={100} height={200}></Image>
+        <Image src="/images/logoo.png" width={100} height={300}></Image>
         <input className=""></input>
       </div>
 
