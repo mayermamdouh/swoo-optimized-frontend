@@ -1,0 +1,68 @@
+import { Product } from "@/types/types";
+
+export const Products: Product[] = [
+  {
+    valueSaved: "199.00",
+    image: "/images/products/mobile1.png",
+    name: "Xioma Redmi Note 11 Pro",
+    currentPrice: "450",
+    oldPrice: "759.00",
+    shipping: "20",
+    stock: true,
+  },
+  {
+    valueSaved: "50.00",
+    image: "/images/products/laptop.png",
+    name: "Dell Inspiron 15 5000 Laptop",
+    currentPrice: "700",
+    oldPrice: "750",
+    shipping: "10",
+    stock: true,
+  },
+  {
+    valueSaved: "30.00",
+    image: "/images/products/headphone.png",
+    name: "Sony Wireless Headphones",
+    currentPrice: "120",
+    oldPrice: "150",
+    shipping: "10",
+    stock: false,
+  },
+  {
+    valueSaved: "100.00",
+    image: "/images/products/mointor.png",
+    name: "Apple Watch Series 9",
+    currentPrice: "399",
+    oldPrice: "499",
+    shipping: "0",
+    stock: true,
+  },
+
+  {
+    valueSaved: "199.00",
+    image: "/images/products/mobile1.png",
+    name: "Xioma Redmi Note 11 Pro",
+    currentPrice: "450",
+    oldPrice: "759.00",
+    shipping: "20",
+    stock: true,
+  },
+  {
+    valueSaved: "50.00",
+    image: "/images/products/laptop.png",
+    name: "Dell Inspiron 15 5000 Laptop",
+    currentPrice: "700",
+    oldPrice: "750",
+    shipping: "10",
+    stock: true,
+  },
+  {
+    valueSaved: "30.00",
+    image: "/images/products/headphone.png",
+    name: "Sony Wireless Headphones",
+    currentPrice: "120",
+    oldPrice: "150",
+    shipping: "10",
+    stock: false,
+  },
+];

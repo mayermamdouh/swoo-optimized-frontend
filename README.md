@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Swoo Tech Frontend (Enhanced Version)
 
-## Getting Started
+A modern, lightning-fast e-commerce frontend built with **Next.js 14+**, **Tailwind CSS**, and **shadcn/ui**. This project is a highly optimized reconstruction of the [Swoo HTML Template](https://ui-themez.smartinnovates.net/items/swoo_html/home_tech/index.html#), focusing on superior performance, clean code architecture, and a seamless user experience.
 
-First, run the development server:
+## 🚀 Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This project transforms a static HTML template into a dynamic, production-ready React application. By leveraging **Next.js App Router** and **Server-Side Rendering (SSR)** strategies, the application achieves significantly faster load times and better SEO compared to the original version.
+
+---
+
+## ⚡ Performance & Optimizations
+
+This version focuses heavily on performance to ensure a near-perfect user experience. Key optimizations include:
+
+- **Next.js Image Optimization:** Replaced standard `<Image>` tags with `next/image` for automatic format conversion (WebP/AVIF), lazy loading, and prevention of Layout Shift (CLS).
+- **React Server Components (RSC):** Shifted heavy logic to the server to reduce the JavaScript bundle size delivered to the client.
+- **Code Splitting:** Automatic route-based splitting ensures users only download the code needed for the page they are visiting.
+- **Modular UI:** Used **shadcn/ui** which allows for tree-shakable components, ensuring no unused CSS or JS is included in the production build.
+- **Font Optimization:** Integrated `next/font` to host fonts locally and eliminate flashes of unstyled text (FOUT).
+- **Optimized Assets:** Compressed all local assets and icons to ensure the fastest possible Initial Server Response.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 14+](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Library:** [shadcn/ui](https://ui.shadcn.com/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Icons:** [react-icons](https://react-icons.github.io/react-icons/)
+
+---
+
+## ✨ Features
+
+- **Dynamic Product Routing:** Nested routes for products and categories using `src/app/products/[id]`.
+- **Advanced Filtering:** Comprehensive sidebar filters for price ranges, categories, and brands.
+- **User Account System:** Pre-built pages for Profile, Orders, Addresses, and Authentication.
+- **Responsive UI:** Mobile-first design with custom navigation for smaller screens.
+- **Complex Components:** Includes Product Carousels, Tabbed Product Info, Review systems, and Deal-of-the-day countdowns.
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── app/             # App Router (Pages, Layouts, API routes)
+├── components/      # Reusable UI & Feature-based components
+│   ├── products/    # Product-specific logic (Filters, Cards)
+│   ├── profile/     # User dashboard components
+│   ├── ui/          # shadcn/ui low-level components (buttons, inputs)
+│   └── ...          # Layout components (Footer, AppBar, etc.)
+├── lib/             # Utility functions and configurations
+├── types/           # TypeScript interfaces and definitions
+└── data/            # Local mock data for brands and products
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
