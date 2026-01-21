@@ -16,8 +16,8 @@ export default function SingleProductsTaps() {
             <li
               key={tab}
               onClick={() => setCurrentView(tab as any)}
-              className={`cursor-pointer uppercase text-sm lg:text-lg${
-                currentView === tab ? "text-black" : ""
+              className={`cursor-pointer uppercase text-sm lg:text-lg ${
+                currentView === tab ? "text-black font-bold" : ""
               }`}
               aria-selected={currentView === tab}
               role="tab"

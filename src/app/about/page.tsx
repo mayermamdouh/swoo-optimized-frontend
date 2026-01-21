@@ -14,7 +14,7 @@ export default function page() {
           <div className="relative w-full mx-auto h-80 overflow-hidden rounded-lg">
             <div className=" w-full h-full transition-opacity duration-500 ease-in-out">
               <Image
-                src="/images/about1.png"
+                src="/images/about/about1.png"
                 alt="about page image"
                 fill
                 className="object-cover"
@@ -64,7 +64,7 @@ export default function page() {
         <div className="flex items-center gap-5 flex-col lg:flex-row">
           <div className="relative w-full min-h-75 lg:min-h-107.5 flex-1 overflow-hidden rounded-lg">
             <Image
-              src="/images/about2.png"
+              src="/images/about/about2.png"
               alt="about page image"
               fill
               className="object-cover"
