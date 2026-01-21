@@ -27,8 +27,12 @@ export default function SingleProduct({ variant }: singleProductProps) {
 
   const storages = ["64GB", "128GB", "256GB", "512GB"];
 
-  const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [selectedStorage, setSelectedStorage] = useState<string | null>(null);
+  const [selectedColor, setSelectedColor] = useState<string | null>(
+    productColors[0].name,
+  );
+  const [selectedStorage, setSelectedStorage] = useState<string | null>(
+    storages[1],
+  );
   const [rating, setRating] = useState(4);
   const [mainImage, setMainImage] = useState(images[1]);
 
