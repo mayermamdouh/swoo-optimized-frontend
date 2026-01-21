@@ -26,52 +26,87 @@ export default function Footer() {
               <h2 className="text-lg font-bold uppercase">top Categories</h2>
 
               <ul className="flex flex-col gap-2  text-gray-500">
-                <li>Laptops</li>
-                <li>PC & Computers</li>
-                <li>Cell Phones</li>
-                <li>Tablets</li>
-                <li>Gaming & VR</li>
-                <li>Networks</li>
-                <li>Cameras</li>
-                <li>Sounds</li>
-                <li>Office</li>
+                {[
+                  "Laptops",
+                  "PC & Computers",
+                  "Cell Phones",
+                  "Tablets",
+                  "Gaming & VR",
+                  "Networks",
+                  "Cameras",
+                  "Sounds",
+                  "Office",
+                ].map((item, index) => (
+                  <li
+                    key={index}
+                    className="cursor-pointer hover:text-black hover:underline transition-all duration-200"
+                  >
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="flex-1 flex flex-col items-start gap-5">
               <h2 className="text-lg font-bold uppercase">company</h2>
 
               <ul className="flex flex-col gap-2 text-gray-500">
-                <li>About Swoo</li>
-                <li>Contact</li>
-                <li>Career</li>
-                <li>Blog</li>
-                <li>Sitemap</li>
-                <li>Store Locations</li>
+                {[
+                  "About Swoo",
+                  "Contact",
+                  "Career",
+                  "Blog",
+                  "Sitemap",
+                  "Store Locations",
+                ].map((item, index) => (
+                  <li
+                    key={index}
+                    className="cursor-pointer hover:text-black hover:underline transition-all duration-200"
+                  >
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="flex-1 flex flex-col items-start gap-5">
               <h2 className="text-lg font-bold uppercase">help center</h2>
 
               <ul className="flex flex-col gap-2 text-gray-500">
-                <li>Laptops</li>
-                <li>PC & Computers</li>
-                <li>Cell Phones</li>
-                <li>Tablets</li>
-                <li>Gaming & VR</li>
-                <li>Networks</li>
-                <li>Cameras</li>
-                <li>Sounds</li>
-                <li>Office</li>
+                {[
+                  "Laptops",
+                  "PC & Computers",
+                  "Cell Phones",
+                  "Tablets",
+                  "Gaming & VR",
+                  "Networks",
+                  "Cameras",
+                  "Sounds",
+                  "Office",
+                ].map((item, index) => (
+                  <li
+                    key={index}
+                    className="relative cursor-pointer text-gray-700 transition-colors duration-200 hover:text-black"
+                  >
+                    {item}
+                    <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 hover:w-full"></span>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="flex-1 flex flex-col items-start gap-5">
               <h2 className="text-lg font-bold uppercase">partner</h2>
 
               <ul className="flex flex-col gap-2 text-gray-500">
-                <li>Become Seller</li>
-                <li>Affiliate</li>
-                <li>Advertise</li>
-                <li>Partnership</li>
+                {["Become Seller", "Affiliate", "Advertise", "Partnership"].map(
+                  (item, index) => (
+                    <li
+                      key={index}
+                      className="relative cursor-pointer text-gray-700 transition-colors duration-200 hover:text-black"
+                    >
+                      {item}
+                      <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 hover:w-full"></span>
+                    </li>
+                  ),
+                )}
               </ul>
             </div>
           </div>
